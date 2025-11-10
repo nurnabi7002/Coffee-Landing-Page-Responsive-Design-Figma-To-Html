@@ -1,6 +1,7 @@
 * {
     font-family: 'Rubik', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: -0.333px;
+     outline: 1px solid red;
 }
 
 body {
@@ -171,3 +172,4 @@ aside {
     animation: fromRight 1.5s ease forwards;
 
 }
+
