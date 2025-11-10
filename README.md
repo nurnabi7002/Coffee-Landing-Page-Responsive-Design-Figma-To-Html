@@ -46,6 +46,6 @@ root
 ---
 
 ## 💬 Author
-**Developed by:** [NRVortex](https://github.com/nurnabi7002)  
+**Developed by:** [Nur Nabi Khan](https://github.com/nurnabi7002)  
 📬 *Feel free to connect for collaboration or feedback!*
 
