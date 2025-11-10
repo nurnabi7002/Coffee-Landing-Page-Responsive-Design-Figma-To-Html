@@ -3,6 +3,9 @@
     letter-spacing: -0.333px;
 }
 
+body {
+  overflow-x: hidden;
+}
 
 .lobster {
   font-family: "Lobster", sans-serif;
@@ -166,4 +169,5 @@ aside {
 
 .animation-from-right {
     animation: fromRight 1.5s ease forwards;
+
 }
