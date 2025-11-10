@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Landing Page Responsive Design (Community)</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="/src/style.css">
+    <!-- Rubik Font Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <!-- Lobster font import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Nav Bar -->
+    <header class="bg-transparent z-10 fixed w-full flex justify-center items-center">
+        <div class="cc">
+            <nav class="flex justify-center items-center gap-[10vw] lg:gap-[152px] 2xl:gap-[321px] pt-[38px] pb-[38px]">
+                <div class="flex gap-4">
+                    <!-- Manu Button -->
+                    <button class="lg:hidden" id="nav-menu-btn">
+                        <img src="/assets/menu-icon.svg" alt="menu" class="w-6 h-5 cursor-pointer">
+                    </button>
+
+                    <!-- Logo -->
+                    <img src="/assets/logo.svg" alt="logo" class="h-[43px] w-[113px] sm:w-[169px] sm:h-[63px]">
+                </div>
+
+                <!-- Nav Links -->
+                <ul class="hidden lg:flex justify-center items-center gap-4">
+                    <li class="text-[#f39c11] font-bold cursor-pointer scroll-btn">Home</li>
+                    <li class="text-white scroll-btn cursor-pointer">About Us</li>
+                    <li class="text-white scroll-btn cursor-pointer">Our Menu</li>
+                    <li class="text-white scroll-btn cursor-pointer">Contact Us</li>
+                </ul>
+
+                <!-- Auth -->
+                <ul class="flex gap-[26px]">
+                    <li><a href="#"><img src="/assets/cart.svg" alt="cart" class="nav-auth rounded-[50%] p-5"></a></li>
+                    <li><a href="#"><img src="/assets/user.svg" alt="user" class="nav-auth rounded-[50%] p-5"></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Aside Bar -->
+    <aside class="aside-off absolute bg-transparent top-[150px] w-full flex justify-center items-center text-center pt-7 pb-7" id="aside">
+        <!-- Nav Links -->
+        <ul class="flex flex-col gap-5 text-white">
+            <li class="cursor-pointer font-semibold aside-nav-btn">Home</li>
+            <li class="cursor-pointer font-semibold aside-nav-btn">About Us</li>
+            <li class="cursor-pointer font-semibold aside-nav-btn">Our Menu</li>
+            <li class="cursor-pointer font-semibold aside-nav-btn">Contact Us</li>
+        </ul>
+    </aside>
+
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero-section w-full scroll-section section">
+            <div class="cc">
+                <div class="flex flex-col gap-[506px] justify-center items-center pt-[248px] pb-[33px]">
+                    <h1 class="lobster text-white text-[50px] lg:text-[80px] xl:text-[100px] font-normal text-center aniLeft">Relax & Enjoy Your Coffee</h1>
+                    <img src="/assets/down-arrow.svg" alt="menu" class="p-5 bg-[#f39c11] rounded-[50%] cursor-pointer aniRight " id="to-menu-btn">
+                    
+                </div>
+            </div>
+        </section>
+
+
+        <!-- About Us Section -->
+        <section class="bg-[#fff4d8] scroll-section section">
+            <div class="cc">
+                <div class="w-full flex flex-wrap justify-center items-center gap-[135px] pt-[82px] pb-[82px]">
+                    <!-- About Summary -->
+                    <div class="flex flex-col gap-[33px] tracking-[-0.333px] aniLeft">
+                        <h2 class="lobster text-black text-[30px] lg:text-[50px] font-normal leading-[50px]">About Us</h2>
+                        <p class="text-[#555] font-normal text-[15px] lg:text-[20px] leading-[30px] max-w-[554px]">Our coffee bar uses
+                            only Ethiopian coffee. All commercially produced coffee originates from
+                            Ethiopia.
+                            We love Ethiopia for providing the world with coffee to grow, and we continue to love the
+                            flavor
+                            of
+                            that country’s coffee. The fruity acidity of this single origin coffee is balanced by its
+                            sweet
+                            honey notes, creating soft, light notes with a light character.</p>
+                        <a href="#"
+                            class="leading-5 font-normal text-[15px] lg:text-[20px] text-white pt-[15px] pb-[15px] lg:pt-5 lg:pb-5 pl-[30px] pr-[30px] rounded-[10px] bg-[#f39c11] w-[161px]">Learn
+                            More</a>
+                    </div>
+
+                    <!-- Image -->
+                    <img src="/assets/about.png" alt="about" class="w-[349px] h-[312px] lg:w-[487px] lg:h-[437px] 2xl:w-[643px] 2xl:h-[577px] aniRight">
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Features Section -->
+        <section class="bg-[#3d210c] section">
+            <div class="cc">
+                <div class="flex justify-center items-center flex-col gap-[33px] pt-[52px] pb-10">
+                    <h2 class="text-center lobster font-normal text-[50px] text-[#FFF4D8] leading-[50px]">Features</h2>
+
+                    <!-- Features Card Container -->
+                    <div class="flex justify-center items-center gap-[75px] flex-wrap">
+                        <!-- Cards -->
+
+                        <article class="flex justify-center items-center text-center gap-8 flex-col text-[#FFF4D8] aniLeft">
+                            <img src="/assets/features1.png" alt="features1">
+                            <h3 class="text-[30px] leading-10 font-semibold">High Quality</h3>
+                            <p class="text-[20px] font-normal leading-[25px] max-w-[286px]">Enjoy an unrivaled coffee
+                                taste sensation with our selected coffee beans, carefully roasted
+                                to
+                                create a fresh cup of coffee that captivates your taste buds.</p>
+                        </article>
+
+                        <article class="flex justify-center items-center text-center gap-8 flex-col text-[#FFF4D8] aniLeft">
+                            <img src="/assets/features2.png" alt="features2">
+                            <h3 class="text-[30px] leading-10 font-semibold">Fast Wi-Fi and <br> Work Area</h3>
+                            <p class="text-[20px] font-normal leading-[25px] max-w-[286px]">Combine productivity with
+                                the pleasure of coffee. Enjoy a super-fast Wi-Fi connection and a comfortable workspace,
+                                where creative ideas bloom while sipping your favorite coffee.</p>
+                        </article>
+
+
+                        <article class="flex justify-center items-center text-center gap-8 flex-col text-[#FFF4D8] aniRight">
+                            <img src="/assets/features3.png" alt="features3">
+                            <h3 class="text-[30px] leading-10 font-semibold">Comfortable and <br> Friendly Room</h3>
+                            <p class="text-[20px] font-normal leading-[25px] max-w-[286px]">Find the perfect place to
+                                gather, work or relax with friends in a warm and friendly atmosphere. Our spaces are
+                                designed to create a pleasant experience.</p>
+                        </article>
+
+                        <article class="flex justify-center items-center text-center gap-8 flex-col text-[#FFF4D8] aniRight">
+                            <img src="/assets/features4.png" alt="features4">
+                            <h3 class="text-[30px] leading-10 font-semibold">Creative and <br> Innovative Menu</h3>
+                            <p class="text-[20px] font-normal leading-[25px] max-w-[286px]">There is always something
+                                new to try on every visit. From specialty coffees to delicious snacks, our menu is
+                                designed to satisfy a variety of tastes.</p>
+                        </article>
+
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Our Menu Section -->
+        <section class="bg-[#fff4d8] scroll-section section">
+            <div class="cc">
+                <div class="w-full flex flex-col justify-center items-center pt-[60px] pb-[75px] gap-5">
+                    <div class="flex flex-col gap-[30px]">
+                        <h2 class="text-center text-[#0D1015] lobster text-[50px] font-normal leading-[50px]">Our Menu
+                        </h2>
+                        <a href="#"
+                            class="text-[20px] font-normal text-white leading-5 pt-5 pb-4 pl-[30px] pr-[30px] bg-[#f39c11] rounded-[10px] right-0">See
+                            All Products</a>
+                    </div>
+
+                    <!-- Menu Card Container -->
+                    <div class="flex justify-center items-center flex-wrap gap-10">
+                        <!-- Cards -->
+
+                        <article class="bg-white p-6 flex items-center flex-col gap-5 rounded-[20px] min-w-[350px] aniLeft">
+                            <img src="/assets/Americano-Coffee.png" alt="Americano Coffee">
+
+                            <div class="flex flex-col gap-[9px]">
+                                <h3 class="text-[30px] font-semibold leading-10">Americano Coffee</h3>
+                                <div class="flex gap-[9px]">
+                                    <img src="/assets/rated.svg" alt="rated">
+                                    <p>5.9</p>
+                                </div>
+                                <p class="text-[20px] text-[#555] font-normal leading-[25px] min-w-[338px] max-w-[398px]">Lorem ipsum
+                                    dolor sit amet consectetur. Fermentum dolor nibh lectus aenean eu sit ut.
+                                    Eget tortor nullam eros pretium tincidunt ipsum at.</p>
+                            </div>
+
+                            <div class="flex justify-center items-center gap-[60px] lg:gap-[90px] mt-[17px] whitespace-nowrap">
+                                <h2 class="text-[35px] lg:text-[40px] font-bold leading-10">$ 13.6</h2>
+                                <a href="#"
+                                    class="text-[#F39C11] text-[15px] lg:text-[20px] font-normal leading-5 flex justify-center items-center gap-2.5 border-2 border-[#F39C11] rounded-[10px] pt-2.5 pb-2.5 pl-[15px] pr-[15px] lg:pt-5 lg:pb-5 lg:pl-[30px] lg:pr-[30px] menu-buy-card-button">Add
+                                    to Cart</a>
+                            </div>
+                        </article>
+
+
+                          <article class="bg-white p-6 flex items-center flex-col gap-5 rounded-[20px] min-w-[350px]">
+                            <img src="/assets/Espresso-Coffee.png" alt="Espresso Coffee">
+
+                            <div class="flex flex-col gap-[9px]">
+                                <h3 class="text-[30px] font-semibold leading-10">Espresso Coffee</h3>
+                                <div class="flex gap-[9px]">
+                                    <img src="/assets/rated.svg" alt="rated">
+                                    <p>5.9</p>
+                                </div>
+                                <p class="text-[20px] text-[#555] font-normal leading-[25px] min-w-[338px] max-w-[398px]">Lorem ipsum
+                                    dolor sit amet consectetur. Fermentum dolor nibh lectus aenean eu sit ut.
+                                    Eget tortor nullam eros pretium tincidunt ipsum at.</p>
+                            </div>
+
+                            <div class="flex justify-center items-center gap-[60px] lg:gap-[90px] mt-[17px] whitespace-nowrap">
+                                <h2 class="text-[35px] lg:text-[40px] font-bold leading-10">$ 18.1</h2>
+                                <a href="#"
+                                    class="text-[#F39C11] text-[15px] lg:text-[20px] font-normal leading-5 flex justify-center items-center gap-2.5 border-2 border-[#F39C11] rounded-[10px] pt-2.5 pb-2.5 pl-[15px] pr-[15px] lg:pt-5 lg:pb-5 lg:pl-[30px] lg:pr-[30px] menu-buy-card-button">Add
+                                    to Cart</a>
+                            </div>
+                        </article>
+
+
+                          <article class="bg-white p-6 flex items-center flex-col gap-5 rounded-[20px] min-w-[350px] aniRight">
+                            <img src="/assets/Latte-Coffee.png" alt="Latte Coffee">
+
+                            <div class="flex flex-col gap-[9px]">
+                                <h3 class="text-[30px] font-semibold leading-10">Latte Coffee</h3>
+                                <div class="flex gap-[9px]">
+                                    <img src="/assets/rated.svg" alt="rated">
+                                    <p>5.9</p>
+                                </div>
+                                <p class="text-[20px] text-[#555] font-normal leading-[25px] min-w-[338px] max-w-[398px]">Lorem ipsum
+                                    dolor sit amet consectetur. Fermentum dolor nibh lectus aenean eu sit ut.
+                                    Eget tortor nullam eros pretium tincidunt ipsum at.</p>
+                            </div>
+
+                            <div class="flex justify-center items-center gap-[60px] lg:gap-[90px] mt-[17px] whitespace-nowrap">
+                                <h2 class="text-[35px] lg:text-[40px] font-bold leading-10">$ 15.5</h2>
+                                <a href="#"
+                                    class="text-[#F39C11] text-[15px] lg:text-[20px] font-normal leading-5 flex justify-center items-center gap-2.5 border-2 border-[#F39C11] rounded-[10px] pt-2.5 pb-2.5 pl-[15px] pr-[15px] lg:pt-5 lg:pb-5 lg:pl-[30px] lg:pr-[30px] menu-buy-card-button">Add
+                                    to Cart</a>
+                            </div>
+                        </article>
+
+                      
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="bg-[#3d210c] scroll-section section">
+        <div class="cc">
+            <div class="pt-[62px] pb-10 flex flex-col gap-20">
+                <section>
+                    <!-- Contact, Social links, Form -->
+                    <div class="flex flex-col 2xl:flex-row gap-[72px]">
+
+                        <!-- Social Links -->
+                        <div class="flex flex-col gap-10 aniLeft">
+                            <img src="/assets/logo.svg" alt="logo" class="w-[215px] h-[81px]">
+                            <div class="flex flex-col gap-[27px]">
+                                <p class="font-normal text-[20px] text-[#FFF4D8] leading-[30px] max-w-[457px]">There are people who can’t start their day without having a freshly brewed cup of
+                                    coffee
+                                    and we understand them.</p>
+
+                                <div class="flex items-center gap-3.5">
+                                    <a href="#"><img src="/assets/x.svg" alt="x"></a>
+                                <a href="#"><img src="/assets/facebook.svg" alt="facebook"></a>
+                                <a href="#"><img src="/assets/whatsapp.svg" alt="whatsapp"></a>
+                                <a href="#"><img src="/assets/instagram.svg" alt="instagram"></a>
+                                <a href="#"><img src="/assets/youtube.svg" alt="youtube"></a>
+                                <a href="#"><img src="/assets/tiktok.svg" alt="tiktok"></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact -->
+                        <address class="flex flex-col gap-[25px]">
+                            <h3 class="text-[25px] font-semibold text-[#FFF4D8]">Contact Us</h3>
+                            <a href="#" class="text-[#FFF4D8] font-normal text-[20px] before:content-[url(/assets/location.svg)] flex items-center gap-3.5 ">72, Wall street, King Road, NY 20110</a>
+                            <a href="#" class="text-[#FFF4D8] font-normal text-[20px] before:content-[url(/assets/phone-number.svg)] flex items-center gap-3.5 ">800.275.8777</a>
+                            <a href="#" class="text-[#FFF4D8] font-normal text-[20px] before:content-[url(/assets/email.svg)] flex items-center gap-3.5 ">ngopiloer@gmail.com</a>
+                        </address>
+
+                        <!-- Form -->
+                        <div class="flex flex-col gap-6 aniRight">
+                        <h3 class="text-[25px] font-semibold text-[#FFF4D8]">Subscribe To Newsletter</h3>
+                            <form action="#" class="flex flex-col gap-6">
+                                <input type="email" name="email" id="email" placeholder="Your e-mail address" class="p-5 bg-white rounded-[10px] placeholder:text-[#DADADA] placeholder:text-[20px] placeholder:font-normal capitalize outline-0 w-[310px] lg:w-[354px] 2xl:w-[417px]" required>
+                                <button type="submit" id="form-submit-btn" class="font-normal text-[20px] leading-5 pt-5 pb-5 pl-[30px] pr-[30px] rounded-[10px] bg-[#f39c11] text-white w-40 cursor-pointer">Subscribe</button>
+                            </form>
+                            <p class="text-[20px] font-normal italic text-[#FFF4D8] max-w-[440px]">Sign up with your email address to receive news and updates</p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <!-- Hr line and coyright -->
+                <div class="flex flex-col gap-[26px]">
+                    <hr class="text-white">
+                <p class="text-[#FFF4D8] text-[20px] font-normal text-center">Copyright ©2023 NgopiLoer. All rights reserved.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="/src/script.js"></script>
+</body>
+
+</html>

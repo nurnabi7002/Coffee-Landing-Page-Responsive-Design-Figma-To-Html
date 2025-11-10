@@ -1,0 +1,169 @@
+* {
+    font-family: 'Rubik', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: -0.333px;
+}
+
+
+.lobster {
+  font-family: "Lobster", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cc {
+    margin: 0 auto;
+    max-width: 1512px;
+    box-sizing: border-box;
+    padding: 0 20px;
+}
+
+/* Nav Auth */
+
+.nav-auth {
+  background-color: rgba(255, 255, 255, 0.30);
+}
+
+aside {
+    backdrop-filter: blur(10px);
+}
+
+.aside-off {
+  opacity: 0;
+  transition: 1s ease;
+  margin-top: -500px;
+}
+
+.aside-on {
+  margin-top: 0;
+  opacity: 1;
+  transition: 1s ease;
+}
+
+
+/* Hero */
+
+.hero-section {
+  background: url(/assets/bg.png);
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* Buy Coffee */
+.menu-buy-card-button::before {
+  content: url(/assets/ShoppingCart.svg);
+}
+
+
+/* Animation */
+
+
+
+@keyframes fromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-500vw);
+    }
+
+    10% {
+        opacity: 0.1;
+    }
+
+    20% {
+        opacity: 0.2;
+    }
+
+    30% {
+        opacity: 0.3;
+    }
+
+    40% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    60% {
+        opacity: 0.6;
+    }
+
+    70% {
+        opacity: 0.7;
+    }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    90% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0vw);
+    }
+}
+
+
+
+
+@keyframes fromRight {
+    0% {
+        opacity: 0;
+        transform: translateX(500vw);
+    }
+
+    10% {
+        opacity: 0.1;
+    }
+
+    20% {
+        opacity: 0.2;
+    }
+
+    30% {
+        opacity: 0.3;
+    }
+
+    40% {
+        opacity: 0.4;
+    }
+
+    50% {
+        opacity: 0.5;
+    }
+
+    60% {
+        opacity: 0.6;
+    }
+
+    70% {
+        opacity: 0.7;
+    }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    90% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0vw);
+    }
+}
+
+
+.animation-from-left {
+    animation: fromLeft 1.5s ease forwards;
+}
+
+.animation-from-right {
+    animation: fromRight 1.5s ease forwards;
+}
