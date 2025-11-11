@@ -36,7 +36,7 @@ root
 │── index.html
 │── src/
 │ ├── input.css
-│ └── main.js
+│ └── script.js
 │── dist/
 │ └── output.css
 │── preview.jpg
